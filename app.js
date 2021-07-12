@@ -44,7 +44,7 @@ app.post("/", function(req, res){
 
     const options={
         method: "POST",
-        auth: "PasinduR:process.env.KEY"
+        auth: "PasinduR:"+process.env.KEY
     }
     const request=https.request(url, options, function(response){
 
