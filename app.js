@@ -6,6 +6,7 @@ const request= require("request");
 const https= require("https");
 
 const app= express();
+require('dotenv').config();
 
 app.use(express.static("Public"));
 app.use(bodyParser.urlencoded({extended: true}));
