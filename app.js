@@ -43,7 +43,7 @@ app.post("/", function(req, res){
 
     const options={
         method: "POST",
-        auth: "PasinduR:3749a1a269845ce9c61a5eac6e1ef79e-us6"
+        auth: "PasinduR:process.env.KEY"
     }
     const request=https.request(url, options, function(response){
 
@@ -69,11 +69,10 @@ app.post("/", function(req, res){
 
 });
 
+// 
 app.listen(process.env.PORT || 3000, function(){
     console.log("This server is running in port 3000");
 });
 
 
 
-//API KEY
-// 3749a1a269845ce9c61a5eac6e1ef79e-us6
